@@ -52,3 +52,4 @@ func ParseFlags() {
 		os.Exit(0)
 	}
 }
+
