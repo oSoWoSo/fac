@@ -50,12 +50,7 @@ func findConflicts() (files []conflict.File, err error) {
 	for i := range files {
 		file := &files[i]
 		for j := range file.Conflicts {
-			// Set context lines to show
-			c := &file.Conflicts[j]
-			if err = c.SetContextLines(keyBinding[binding.DefaultContextLines]); err != nil {
-				return
-			}
-			conflicts = append(conflicts, c)
+			conflicts = append(conflicts, &file.Conflicts[j])
 		}
 	}
 
