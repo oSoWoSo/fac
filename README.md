@@ -33,8 +33,7 @@ $ go get github.com/mkchoi212/fac
 Or using [Homebrew 🍺](https://brew.sh)
 
 ```bash
-brew tap mkchoi212/fac https://github.com/mkchoi212/fac.git
-brew install fac
+brew install mkchoi212/fac/fac
 ```
 
 ## 🔧 Using
@@ -43,30 +42,29 @@ brew install fac
 
 The commands have been preset to the following specifications
 
+| Keybinding                      | Description          |
+| ------------------------------- | -------------------- |
+| <kbd>w</kbd>                    | show more lines up   |
+| <kbd>s</kbd>                    | show more lines down |
+| <kbd>a</kbd>                    | use local version    |
+| <kbd>d</kbd>                    | use incoming version |
+| <kbd>e</kbd>                    | manually edit code   |
+| <kbd>j</kbd>                    | scroll down          |
+| <kbd>k</kbd>                    | scroll up            |
+| <kbd>v</kbd>                    | [v]iew orientation   |
+| <kbd>n</kbd>                    | [n]ext conflict      |
+| <kbd>p</kbd>                    | [p]revious conflict  |
+| <kbd>h</kbd>, <kbd>?</kbd>      | [h]elp               |
+| <kbd>q</kbd>, <kbd>Ctrl+c</kbd> | [q]uit               |
+
 ```
-w - show more lines up
-s - show more lines down
-a - use local version
-d - use incoming version
-e - manually edit code
-
-j - scroll down
-k - scroll up
-
-v - [v]iew orientation
-n - [n]ext conflict
-p - [p]revious conflict
-
-h | ? - [h]elp
-q | Ctrl+c - [q]uit
-
 [w,a,s,d,?] >> [INPUT HERE]
 ```
 
 ### ⚙️ Customization
 
-The above key-bindings can be altered by creating a `.fac.yml` file in your home directory.
-Please refer to the [configuration README.md](./key/README.md) for more information.
+The above key-bindings and various behaviors can be altered by creating a `.fac.yml` file in your home directory.
+Please refer to the [configuration README.md](./binding/README.md) for more information.
 
 ## ✋ Contributing
 
@@ -77,4 +75,5 @@ This is an open source project so feel free to contribute by
 - Or [tweet](https://twitter.com/Bananamlkshake2) at me!
 
 ## 👮 License
+
 See [License](./LICENSE)
